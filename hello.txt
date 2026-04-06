@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello World..")
+}
+
+// go run for compile and run the program
+// go build for compile the program
+// go fmt for format the code
+// go vet for check the code
+// go test for test the code
+// go doc for show the documentation
+// go env for show the environment variables
+// go version for show the version of the go
+// go help for show the help
+// go list for show the list of the packages
+// go run for compile and run the program
+// go build for compile the program
+// go fmt for format the code

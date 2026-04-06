@@ -1,0 +1,36 @@
+{{define "content"}}
+<div class="container">
+  <div class="auth-form">
+    <h2>Register</h2>
+    {{if.Error}}
+    <div class="error-message">{{.Error}}</div>
+    {{end}}
+    <form action="/register" method="post" autocomplete="off">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" value="{{.Username}}" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" value="{{.Email}}" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" value="{{.Password}}" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="confirm_password">Confirm Passowrd:</label>
+        <input type="confirm_password" name="confirm_password" id="confirm_password" required>
+      </div>
+  
+      <button type="submit" class="btn-primary">Register</button>
+    </form>
+    <div class="auth-link">
+      Already hae and account? <a href="/login">Login here</a>
+    </div>
+  </div>
+</div>
+{{end}}
